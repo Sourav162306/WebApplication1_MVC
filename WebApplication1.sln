@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.33927.210
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{31586A3A-403F-4708-8AB3-98BDD2464FA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2_Razor_Pages", "WebApplication2_Razor_Pages\WebApplication2_Razor_Pages.csproj", "{DA4E713B-375E-4927-BCBA-CD70A9F86E16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication2_Razor_Pages", "WebApplication2_Razor_Pages\WebApplication2_Razor_Pages.csproj", "{DA4E713B-375E-4927-BCBA-CD70A9F86E16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
