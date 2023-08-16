@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Net;
-using WebApplication1.Models;
+using Web1.Models;
 
-namespace WebApplication1.Data
+namespace Web1.DataAccess.Data
 {
     public class ApplicationDbContext : DbContext
 

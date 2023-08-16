@@ -1,17 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using WebApplication1.Data;
-using WebApplication1.Models;
+using Web1.DataAccess.Data;
+using Web1.Models;
 
-namespace WebApplication1.Controllers
+namespace Web1.DataAccess.Controllers
 {
     public class CategoryController : Controller
     {
         private readonly ApplicationDbContext _db;
-        public CategoryController(ApplicationDbContext db)
-        {
-            _db = db;
-        }
+        public CategoryController(ApplicationDbContext db) => _db = db;
         public IActionResult Index()
         {
             List<Category> ObjCategoryList = _db.Categories.ToList();
@@ -38,7 +34,7 @@ namespace WebApplication1.Controllers
             }
             return View(obj);
         }
-        public IActionResult Edit(int id)
+        public IActionResult Edit(int? id)
         {
             if(id == null || id == 0)
             {
