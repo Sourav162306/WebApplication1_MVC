@@ -1,7 +1,11 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,5 +43,15 @@ namespace Web1.Models
         [DisplayName("Price for 100+")]
         [Range(1, 1000)]
         public double? Price100 { get; set; }
+
+        public int CategoryId { get; set; }
+
+        [ForeignKey("CategoryId")]
+        [ValidateNever]
+        [DisplayName("Category")]
+        public Category Category { get; set; }
+        [ValidateNever]
+        [DisplayName("Image Url")]
+        public String ImageUrl { get; set; }
     }
 }
